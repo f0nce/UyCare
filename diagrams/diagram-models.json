@@ -1,0 +1,1063 @@
+{
+  "system-context": {
+    "name": "system-context",
+    "title": "UyCare system context",
+    "width": 1120,
+    "height": 780,
+    "nodes": [
+      {
+        "id": "c",
+        "x": 30,
+        "y": 125,
+        "w": 200,
+        "h": 110,
+        "label": "Private customer\nResident or homeowner",
+        "kind": "box"
+      },
+      {
+        "id": "o",
+        "x": 30,
+        "y": 340,
+        "w": 200,
+        "h": 110,
+        "label": "OSI/KSK representative\nActs for an organisation",
+        "kind": "box"
+      },
+      {
+        "id": "p",
+        "x": 880,
+        "y": 125,
+        "w": 210,
+        "h": 110,
+        "label": "Independent provider\nProfile and offers",
+        "kind": "box"
+      },
+      {
+        "id": "m",
+        "x": 880,
+        "y": 340,
+        "w": 210,
+        "h": 110,
+        "label": "Moderator\nReports and decisions",
+        "kind": "box"
+      },
+      {
+        "id": "s",
+        "x": 375,
+        "y": 200,
+        "w": 360,
+        "h": 240,
+        "label": "UyCare platform\nRequests and competing offers\nCustomer selection and job history\nChat and completed-job reviews\nOptional category suggestion",
+        "kind": "system"
+      },
+      {
+        "id": "media",
+        "x": 400,
+        "y": 570,
+        "w": 310,
+        "h": 85,
+        "label": "External object storage\nProtected media and portfolios",
+        "kind": "box"
+      },
+      {
+        "id": "outside",
+        "x": 20,
+        "y": 620,
+        "w": 300,
+        "h": 65,
+        "label": "Outside UyCare\nDirect payment and phone calls",
+        "kind": "box"
+      }
+    ],
+    "edges": [
+      {
+        "from": "c",
+        "to": "s",
+        "label": "Publishes and selects",
+        "points": [
+          [
+            230,
+            175
+          ],
+          [
+            300,
+            175
+          ],
+          [
+            300,
+            255
+          ],
+          [
+            375,
+            255
+          ]
+        ],
+        "label_pos": [
+          300,
+          150
+        ]
+      },
+      {
+        "from": "o",
+        "to": "s",
+        "label": "Organisation requests",
+        "points": [
+          [
+            230,
+            390
+          ],
+          [
+            300,
+            390
+          ],
+          [
+            300,
+            360
+          ],
+          [
+            375,
+            360
+          ]
+        ],
+        "label_pos": [
+          295,
+          418
+        ]
+      },
+      {
+        "from": "p",
+        "to": "s",
+        "label": "Offers and progress",
+        "points": [
+          [
+            880,
+            175
+          ],
+          [
+            805,
+            175
+          ],
+          [
+            805,
+            255
+          ],
+          [
+            735,
+            255
+          ]
+        ],
+        "label_pos": [
+          810,
+          150
+        ]
+      },
+      {
+        "from": "m",
+        "to": "s",
+        "label": "Moderation",
+        "points": [
+          [
+            880,
+            390
+          ],
+          [
+            805,
+            390
+          ],
+          [
+            805,
+            360
+          ],
+          [
+            735,
+            360
+          ]
+        ],
+        "label_pos": [
+          810,
+          418
+        ]
+      },
+      {
+        "from": "s",
+        "to": "media",
+        "label": "Authorized uploads / access",
+        "points": [
+          [
+            555,
+            440
+          ],
+          [
+            555,
+            570
+          ]
+        ],
+        "label_pos": [
+          710,
+          515
+        ]
+      }
+    ],
+    "notes": [
+      "Proposed MVP boundary. No payment gateway or external identity verification is integrated."
+    ]
+  },
+  "use-cases": {
+    "name": "use-cases",
+    "title": "UyCare use cases",
+    "width": 1200,
+    "height": 1050,
+    "nodes": [
+      {
+        "id": "boundary",
+        "x": 255,
+        "y": 90,
+        "w": 700,
+        "h": 860,
+        "label": "UyCare system",
+        "kind": "container"
+      },
+      {
+        "id": "customer",
+        "x": 20,
+        "y": 175,
+        "w": 180,
+        "h": 150,
+        "label": "Customer\nPrivate or OSI/KSK",
+        "kind": "actor"
+      },
+      {
+        "id": "provider",
+        "x": 995,
+        "y": 175,
+        "w": 180,
+        "h": 150,
+        "label": "Provider",
+        "kind": "actor"
+      },
+      {
+        "id": "moderator",
+        "x": 20,
+        "y": 755,
+        "w": 180,
+        "h": 150,
+        "label": "Moderator",
+        "kind": "actor"
+      },
+      {
+        "id": "u1",
+        "x": 300,
+        "y": 155,
+        "w": 270,
+        "h": 70,
+        "label": "Publish a repair request",
+        "kind": "usecase"
+      },
+      {
+        "id": "u2",
+        "x": 640,
+        "y": 155,
+        "w": 270,
+        "h": 70,
+        "label": "Maintain profile / portfolio",
+        "kind": "usecase"
+      },
+      {
+        "id": "u3",
+        "x": 300,
+        "y": 300,
+        "w": 270,
+        "h": 70,
+        "label": "Compare and select an offer",
+        "kind": "usecase"
+      },
+      {
+        "id": "u4",
+        "x": 640,
+        "y": 300,
+        "w": 270,
+        "h": 70,
+        "label": "Browse and submit an offer",
+        "kind": "usecase"
+      },
+      {
+        "id": "u5",
+        "x": 470,
+        "y": 455,
+        "w": 280,
+        "h": 75,
+        "label": "Discuss work in private chat",
+        "kind": "usecase"
+      },
+      {
+        "id": "u6",
+        "x": 300,
+        "y": 600,
+        "w": 270,
+        "h": 70,
+        "label": "Confirm work and review",
+        "kind": "usecase"
+      },
+      {
+        "id": "u7",
+        "x": 640,
+        "y": 600,
+        "w": 270,
+        "h": 70,
+        "label": "Update assigned job progress",
+        "kind": "usecase"
+      },
+      {
+        "id": "u8",
+        "x": 470,
+        "y": 750,
+        "w": 280,
+        "h": 70,
+        "label": "Report a problem",
+        "kind": "usecase"
+      },
+      {
+        "id": "u9",
+        "x": 300,
+        "y": 865,
+        "w": 270,
+        "h": 60,
+        "label": "Resolve reports / membership",
+        "kind": "usecase"
+      }
+    ],
+    "edges": [
+      {
+        "from": "customer",
+        "to": "u1",
+        "arrow": false,
+        "points": [
+          [
+            180,
+            220
+          ],
+          [
+            240,
+            220
+          ],
+          [
+            300,
+            190
+          ]
+        ]
+      },
+      {
+        "from": "customer",
+        "to": "u3",
+        "arrow": false,
+        "points": [
+          [
+            180,
+            230
+          ],
+          [
+            230,
+            335
+          ],
+          [
+            300,
+            335
+          ]
+        ]
+      },
+      {
+        "from": "customer",
+        "to": "u5",
+        "arrow": false,
+        "points": [
+          [
+            180,
+            240
+          ],
+          [
+            215,
+            490
+          ],
+          [
+            470,
+            490
+          ]
+        ]
+      },
+      {
+        "from": "customer",
+        "to": "u6",
+        "arrow": false,
+        "points": [
+          [
+            180,
+            250
+          ],
+          [
+            200,
+            635
+          ],
+          [
+            300,
+            635
+          ]
+        ]
+      },
+      {
+        "from": "customer",
+        "to": "u8",
+        "arrow": false,
+        "points": [
+          [
+            180,
+            260
+          ],
+          [
+            180,
+            785
+          ],
+          [
+            470,
+            785
+          ]
+        ]
+      },
+      {
+        "from": "provider",
+        "to": "u2",
+        "arrow": false,
+        "points": [
+          [
+            1020,
+            220
+          ],
+          [
+            970,
+            220
+          ],
+          [
+            910,
+            190
+          ]
+        ]
+      },
+      {
+        "from": "provider",
+        "to": "u4",
+        "arrow": false,
+        "points": [
+          [
+            1020,
+            230
+          ],
+          [
+            970,
+            335
+          ],
+          [
+            910,
+            335
+          ]
+        ]
+      },
+      {
+        "from": "provider",
+        "to": "u5",
+        "arrow": false,
+        "points": [
+          [
+            1020,
+            240
+          ],
+          [
+            985,
+            490
+          ],
+          [
+            750,
+            490
+          ]
+        ]
+      },
+      {
+        "from": "provider",
+        "to": "u7",
+        "arrow": false,
+        "points": [
+          [
+            1020,
+            250
+          ],
+          [
+            1000,
+            635
+          ],
+          [
+            910,
+            635
+          ]
+        ]
+      },
+      {
+        "from": "provider",
+        "to": "u8",
+        "arrow": false,
+        "points": [
+          [
+            1020,
+            260
+          ],
+          [
+            1020,
+            785
+          ],
+          [
+            750,
+            785
+          ]
+        ]
+      },
+      {
+        "from": "moderator",
+        "to": "u9",
+        "arrow": false,
+        "points": [
+          [
+            180,
+            835
+          ],
+          [
+            230,
+            895
+          ],
+          [
+            300,
+            895
+          ]
+        ]
+      }
+    ],
+    "notes": [
+      "Associations indicate actor participation; authentication and ownership are preconditions.",
+      "Category confirmation, cancellation and agreement revisions are detailed in FR-09, FR-12 and FR-17."
+    ]
+  },
+  "components": {
+    "name": "components",
+    "title": "UyCare component diagram",
+    "width": 1200,
+    "height": 920,
+    "nodes": [
+      {
+        "id": "web",
+        "x": 140,
+        "y": 90,
+        "w": 300,
+        "h": 70,
+        "label": "Web client\nNext.js and TypeScript",
+        "kind": "box"
+      },
+      {
+        "id": "flutter",
+        "x": 760,
+        "y": 90,
+        "w": 300,
+        "h": 70,
+        "label": "Mobile client\nFlutter for Android and iOS",
+        "kind": "box"
+      },
+      {
+        "id": "back",
+        "x": 105,
+        "y": 230,
+        "w": 990,
+        "h": 435,
+        "label": "Django application boundary",
+        "kind": "container"
+      },
+      {
+        "id": "api",
+        "x": 300,
+        "y": 285,
+        "w": 600,
+        "h": 65,
+        "label": "REST API and authenticated WebSocket gateway",
+        "kind": "system"
+      },
+      {
+        "id": "acc",
+        "x": 150,
+        "y": 415,
+        "w": 260,
+        "h": 75,
+        "label": "Accounts and Organisations\nIdentity and ownership",
+        "kind": "box"
+      },
+      {
+        "id": "req",
+        "x": 470,
+        "y": 415,
+        "w": 260,
+        "h": 75,
+        "label": "Requests, Offers and Orders\nTransactional assignment",
+        "kind": "box"
+      },
+      {
+        "id": "prof",
+        "x": 790,
+        "y": 415,
+        "w": 260,
+        "h": 75,
+        "label": "Profiles and Reviews\nEvidence and eligibility",
+        "kind": "box"
+      },
+      {
+        "id": "chat",
+        "x": 150,
+        "y": 555,
+        "w": 260,
+        "h": 75,
+        "label": "Messaging and Audit\nPrivate persisted history",
+        "kind": "box"
+      },
+      {
+        "id": "ml",
+        "x": 470,
+        "y": 555,
+        "w": 260,
+        "h": 75,
+        "label": "Category classification\nVersioned Python model",
+        "kind": "box"
+      },
+      {
+        "id": "mod",
+        "x": 790,
+        "y": 555,
+        "w": 260,
+        "h": 75,
+        "label": "Moderation and Media\nReports and authorized files",
+        "kind": "box"
+      },
+      {
+        "id": "db",
+        "x": 150,
+        "y": 755,
+        "w": 330,
+        "h": 75,
+        "label": "PostgreSQL\nDurable records and constraints",
+        "kind": "box"
+      },
+      {
+        "id": "store",
+        "x": 720,
+        "y": 755,
+        "w": 330,
+        "h": 75,
+        "label": "Object storage\nPhotos and portfolio files",
+        "kind": "box"
+      }
+    ],
+    "edges": [
+      {
+        "from": "web",
+        "to": "api",
+        "label": "HTTPS / WSS",
+        "points": [
+          [
+            290,
+            160
+          ],
+          [
+            290,
+            200
+          ],
+          [
+            460,
+            200
+          ],
+          [
+            460,
+            285
+          ]
+        ],
+        "label_pos": [
+          330,
+          190
+        ]
+      },
+      {
+        "from": "flutter",
+        "to": "api",
+        "label": "HTTPS / WSS",
+        "points": [
+          [
+            910,
+            160
+          ],
+          [
+            910,
+            200
+          ],
+          [
+            740,
+            200
+          ],
+          [
+            740,
+            285
+          ]
+        ],
+        "label_pos": [
+          865,
+          190
+        ]
+      },
+      {
+        "from": "api",
+        "to": "acc",
+        "points": [
+          [
+            380,
+            350
+          ],
+          [
+            280,
+            415
+          ]
+        ]
+      },
+      {
+        "from": "api",
+        "to": "req",
+        "points": [
+          [
+            600,
+            350
+          ],
+          [
+            600,
+            415
+          ]
+        ]
+      },
+      {
+        "from": "api",
+        "to": "prof",
+        "points": [
+          [
+            820,
+            350
+          ],
+          [
+            920,
+            415
+          ]
+        ]
+      },
+      {
+        "from": "api",
+        "to": "chat",
+        "points": [
+          [
+            320,
+            350
+          ],
+          [
+            125,
+            370
+          ],
+          [
+            125,
+            592
+          ],
+          [
+            150,
+            592
+          ]
+        ]
+      },
+      {
+        "from": "api",
+        "to": "ml",
+        "points": [
+          [
+            660,
+            350
+          ],
+          [
+            755,
+            370
+          ],
+          [
+            755,
+            535
+          ],
+          [
+            600,
+            535
+          ],
+          [
+            600,
+            555
+          ]
+        ]
+      },
+      {
+        "from": "api",
+        "to": "mod",
+        "points": [
+          [
+            880,
+            350
+          ],
+          [
+            1075,
+            370
+          ],
+          [
+            1075,
+            592
+          ],
+          [
+            1050,
+            592
+          ]
+        ]
+      },
+      {
+        "from": "back",
+        "to": "db",
+        "label": "ORM / transactions",
+        "points": [
+          [
+            315,
+            665
+          ],
+          [
+            315,
+            755
+          ]
+        ],
+        "label_pos": [
+          410,
+          715
+        ]
+      },
+      {
+        "from": "mod",
+        "to": "store",
+        "label": "Authorized media API",
+        "points": [
+          [
+            920,
+            630
+          ],
+          [
+            920,
+            755
+          ]
+        ],
+        "label_pos": [
+          1020,
+          710
+        ]
+      }
+    ],
+    "notes": [
+      "Training runs offline. Manual category selection remains available when inference fails.",
+      "Optional Redis supports multi-process chat delivery; PostgreSQL remains the source of message history."
+    ]
+  },
+  "job-lifecycle": {
+    "name": "job-lifecycle",
+    "title": "UyCare job lifecycle",
+    "width": 1150,
+    "height": 670,
+    "nodes": [
+      {
+        "id": "open",
+        "x": 35,
+        "y": 180,
+        "w": 180,
+        "h": 75,
+        "label": "Open request",
+        "kind": "box"
+      },
+      {
+        "id": "assigned",
+        "x": 300,
+        "y": 180,
+        "w": 180,
+        "h": 75,
+        "label": "Assigned",
+        "kind": "box"
+      },
+      {
+        "id": "progress",
+        "x": 565,
+        "y": 180,
+        "w": 180,
+        "h": 75,
+        "label": "In progress",
+        "kind": "box"
+      },
+      {
+        "id": "await",
+        "x": 830,
+        "y": 180,
+        "w": 260,
+        "h": 75,
+        "label": "Awaiting confirmation",
+        "kind": "box"
+      },
+      {
+        "id": "done",
+        "x": 830,
+        "y": 410,
+        "w": 260,
+        "h": 75,
+        "label": "Completed",
+        "kind": "system"
+      },
+      {
+        "id": "cancel",
+        "x": 300,
+        "y": 410,
+        "w": 300,
+        "h": 75,
+        "label": "Cancelled",
+        "kind": "box"
+      }
+    ],
+    "edges": [
+      {
+        "from": "open",
+        "to": "assigned",
+        "label": "Customer selects",
+        "label_pos": [
+          257,
+          160
+        ]
+      },
+      {
+        "from": "assigned",
+        "to": "progress",
+        "label": "Provider starts",
+        "label_pos": [
+          523,
+          160
+        ]
+      },
+      {
+        "from": "progress",
+        "to": "await",
+        "label": "Provider submits",
+        "label_pos": [
+          790,
+          160
+        ]
+      },
+      {
+        "from": "await",
+        "to": "done",
+        "label": "Customer confirms",
+        "label_pos": [
+          1010,
+          340
+        ]
+      },
+      {
+        "from": "await",
+        "to": "progress",
+        "label": "Customer requests corrections",
+        "points": [
+          [
+            960,
+            180
+          ],
+          [
+            960,
+            110
+          ],
+          [
+            655,
+            110
+          ],
+          [
+            655,
+            180
+          ]
+        ],
+        "label_pos": [
+          800,
+          94
+        ]
+      },
+      {
+        "from": "open",
+        "to": "cancel",
+        "label": "Owner cancels",
+        "points": [
+          [
+            125,
+            255
+          ],
+          [
+            125,
+            450
+          ],
+          [
+            300,
+            450
+          ]
+        ],
+        "label_pos": [
+          165,
+          380
+        ]
+      },
+      {
+        "from": "assigned",
+        "to": "cancel",
+        "label": "Agreed cancellation",
+        "points": [
+          [
+            390,
+            255
+          ],
+          [
+            390,
+            410
+          ]
+        ],
+        "label_pos": [
+          490,
+          340
+        ]
+      },
+      {
+        "from": "progress",
+        "to": "cancel",
+        "dash": true,
+        "points": [
+          [
+            655,
+            255
+          ],
+          [
+            655,
+            448
+          ],
+          [
+            600,
+            448
+          ]
+        ]
+      }
+    ],
+    "notes": [
+      "After assignment, either party requests cancellation and the other confirms; disputed cases go to moderation.",
+      "Awaiting confirmation also permits agreed cancellation. Completed jobs alone are eligible for a customer review."
+    ]
+  }
+}

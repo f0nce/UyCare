@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="components" name="UyCare component diagram">
+    <mxGraphModel dx="1200" dy="920" grid="1" gridSize="10" page="1" pageWidth="1200" pageHeight="920">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="back" value="Django application boundary" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f2f6ed;strokeColor=#a3b5aa;fontFamily=Arial;fontSize=17;verticalAlign=top;align=left;spacing=14;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="105" y="230" width="990" height="435" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" value="HTTPS / WSS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=block;" edge="1" parent="1" source="web" target="api">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="290" y="200" />
+              <mxPoint x="460" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e1" value="HTTPS / WSS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=block;" edge="1" parent="1" source="flutter" target="api">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="910" y="200" />
+              <mxPoint x="740" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=block;" edge="1" parent="1" source="api" target="acc">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=block;" edge="1" parent="1" source="api" target="req">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=block;" edge="1" parent="1" source="api" target="prof">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=block;" edge="1" parent="1" source="api" target="chat">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="125" y="370" />
+              <mxPoint x="125" y="592" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=block;" edge="1" parent="1" source="api" target="ml">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="755" y="370" />
+              <mxPoint x="755" y="535" />
+              <mxPoint x="600" y="535" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=block;" edge="1" parent="1" source="api" target="mod">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1075" y="370" />
+              <mxPoint x="1075" y="592" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" value="ORM / transactions" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=block;" edge="1" parent="1" source="back" target="db">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" value="Authorized media API" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=block;" edge="1" parent="1" source="mod" target="store">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="web" value="Web client&lt;br&gt;Next.js and TypeScript" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="140" y="90" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="flutter" value="Mobile client&lt;br&gt;Flutter for Android and iOS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="760" y="90" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="api" value="REST API and authenticated WebSocket gateway" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eaf1dd;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="300" y="285" width="600" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="acc" value="Accounts and Organisations&lt;br&gt;Identity and ownership" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="150" y="415" width="260" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="req" value="Requests, Offers and Orders&lt;br&gt;Transactional assignment" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="470" y="415" width="260" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="prof" value="Profiles and Reviews&lt;br&gt;Evidence and eligibility" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="790" y="415" width="260" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="chat" value="Messaging and Audit&lt;br&gt;Private persisted history" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="150" y="555" width="260" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="ml" value="Category classification&lt;br&gt;Versioned Python model" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="470" y="555" width="260" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="mod" value="Moderation and Media&lt;br&gt;Reports and authorized files" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="790" y="555" width="260" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="db" value="PostgreSQL&lt;br&gt;Durable records and constraints" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="150" y="755" width="330" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="store" value="Object storage&lt;br&gt;Photos and portfolio files" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="720" y="755" width="330" height="75" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

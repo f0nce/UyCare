@@ -1,0 +1,197 @@
+﻿Summary,Description,Type,Priority,State,Assignee,Due Date
+[UCPLAN-01] Confirm scope and ownership rules,"Planning reference: UCPLAN-01 (not a live YouTrack ID).
+Expected outcome and acceptance criteria: Approved scope, six-category taxonomy and unresolved decisions recorded.
+Traceability: FR-02, FR-16.
+Proposed owner: Tazhibayev Marsel.
+Deadline is a proposed planning date; align with the confirmed academic calendar.
+Evidence: attach artifact/PR/test links.
+Definition of done: acceptance met, checked, peer-reviewed and linked to the repository.",Task,Critical,Open,Tazhibayev Marsel,2026-10-22
+[UCPLAN-02] Conduct customer discovery discussions,"Planning reference: UCPLAN-02 (not a live YouTrack ID).
+Expected outcome and acceptance criteria: Two consented customer discussion records with findings and requirement links.
+Traceability: O1.
+Proposed owner: Akhmetov Kazbek.
+Deadline is a proposed planning date; align with the confirmed academic calendar.
+Evidence: attach artifact/PR/test links.
+Definition of done: acceptance met, checked, peer-reviewed and linked to the repository.",Task,Critical,Open,Akhmetov Kazbek,2026-10-23
+[UCPLAN-03] Conduct provider discovery discussions,"Planning reference: UCPLAN-03 (not a live YouTrack ID).
+Expected outcome and acceptance criteria: Two provider records and category vocabulary findings.
+Traceability: O1.
+Proposed owner: Uranov Daryn.
+Deadline is a proposed planning date; align with the confirmed academic calendar.
+Evidence: attach artifact/PR/test links.
+Definition of done: acceptance met, checked, peer-reviewed and linked to the repository.",Task,Critical,Open,Uranov Daryn,2026-10-23
+[UCPLAN-04] Validate OSI or KSK scenario,"Planning reference: UCPLAN-04 (not a live YouTrack ID).
+Expected outcome and acceptance criteria: One representative discussion or explicit documented scope adjustment.
+Traceability: FR-16.
+Proposed owner: Tazhibayev Marsel.
+Deadline is a proposed planning date; align with the confirmed academic calendar.
+Evidence: attach artifact/PR/test links.
+Definition of done: acceptance met, checked, peer-reviewed and linked to the repository.",Task,Critical,Open,Tazhibayev Marsel,2026-10-23
+[UCPLAN-05] Review literature and source interpretations,"Planning reference: UCPLAN-05 (not a live YouTrack ID).
+Expected outcome and acceptance criteria: At least 12 used sources, including eight scientific publications, reviewed and cited.
+Traceability: O1.
+Proposed owner: Uranov Daryn.
+Deadline is a proposed planning date; align with the confirmed academic calendar.
+Evidence: attach artifact/PR/test links.
+Definition of done: acceptance met, checked, peer-reviewed and linked to the repository.",Task,High,Open,Uranov Daryn,2026-10-22
+[UCPLAN-06] Verify competitor and technology matrices,"Planning reference: UCPLAN-06 (not a live YouTrack ID).
+Expected outcome and acceptance criteria: Three systems and ten criteria; at least three decisions with three alternatives.
+Traceability: O1.
+Proposed owner: Akhmetov Kazbek.
+Deadline is a proposed planning date; align with the confirmed academic calendar.
+Evidence: attach artifact/PR/test links.
+Definition of done: acceptance met, checked, peer-reviewed and linked to the repository.",Task,High,Open,Akhmetov Kazbek,2026-10-22
+[UCPLAN-07] Review requirements and traceability,"Planning reference: UCPLAN-07 (not a live YouTrack ID).
+Expected outcome and acceptance criteria: Every Must requirement has acceptance criteria, component and test.
+Traceability: NFR-11.
+Proposed owner: Tazhibayev Marsel.
+Deadline is a proposed planning date; align with the confirmed academic calendar.
+Evidence: attach artifact/PR/test links.
+Definition of done: acceptance met, checked, peer-reviewed and linked to the repository.",Task,Critical,Open,Tazhibayev Marsel,2026-10-23
+[UCPLAN-08] Review architecture and editable diagrams,"Planning reference: UCPLAN-08 (not a live YouTrack ID).
+Expected outcome and acceptance criteria: Context, use-case and component source/export pairs match requirements.
+Traceability: O2.
+Proposed owner: Akhmetov Kazbek.
+Deadline is a proposed planning date; align with the confirmed academic calendar.
+Evidence: attach artifact/PR/test links.
+Definition of done: acceptance met, checked, peer-reviewed and linked to the repository.",Task,High,Open,Akhmetov Kazbek,2026-10-23
+[UCPLAN-09] Walk through prototype with team,"Planning reference: UCPLAN-09 (not a live YouTrack ID).
+Expected outcome and acceptance criteria: Creation, offers, acceptance, completion and mobile layout checked.
+Traceability: FR-02, FR-07, FR-08.
+Proposed owner: Akhmetov Kazbek.
+Deadline is a proposed planning date; align with the confirmed academic calendar.
+Evidence: attach artifact/PR/test links.
+Definition of done: acceptance met, checked, peer-reviewed and linked to the repository.",Task,High,Open,Akhmetov Kazbek,2026-10-23
+[UCPLAN-10] Create YouTrack and import backlog,"Planning reference: UCPLAN-10 (not a live YouTrack ID).
+Expected outcome and acceptance criteria: Live project exists, real accounts assigned, task IDs linked from README.
+Traceability: NFR-11.
+Proposed owner: Tazhibayev Marsel.
+Deadline is a proposed planning date; align with the confirmed academic calendar.
+Evidence: attach artifact/PR/test links.
+Definition of done: acceptance met, checked, peer-reviewed and linked to the repository.",Task,Critical,Open,Tazhibayev Marsel,2026-10-22
+[UCPLAN-11] Collect supervisor review and address comments,"Planning reference: UCPLAN-11 (not a live YouTrack ID).
+Expected outcome and acceptance criteria: Dated comments, disposition and links to meaningful changes recorded.
+Traceability: O6.
+Proposed owner: Tazhibayev Marsel.
+Deadline is a proposed planning date; align with the confirmed academic calendar.
+Evidence: attach artifact/PR/test links.
+Definition of done: acceptance met, checked, peer-reviewed and linked to the repository.",Task,Critical,Open,Tazhibayev Marsel,2026-10-23
+[UCPLAN-12] Prepare and tag first submission,"Planning reference: UCPLAN-12 (not a live YouTrack ID).
+Expected outcome and acceptance criteria: Team-reviewed merge, exact pre-defense-1 tag and known gaps documented.
+Traceability: O6.
+Proposed owner: Tazhibayev Marsel.
+Deadline is a proposed planning date; align with the confirmed academic calendar.
+Evidence: attach artifact/PR/test links.
+Definition of done: acceptance met, checked, peer-reviewed and linked to the repository.",Task,Critical,Open,Tazhibayev Marsel,2026-10-24
+[UCPLAN-13] Implement accounts and organisation permissions,"Planning reference: UCPLAN-13 (not a live YouTrack ID).
+Expected outcome and acceptance criteria: Cross-role and cross-organisation negative tests pass.
+Traceability: FR-01, FR-16, NFR-01.
+Proposed owner: Uranov Daryn.
+Deadline is a proposed planning date; align with the confirmed academic calendar.
+Evidence: attach artifact/PR/test links.
+Definition of done: acceptance met, checked, peer-reviewed and linked to the repository.",Task,High,Open,Uranov Daryn,2026-11-06
+[UCPLAN-14] Implement requests and protected media,"Planning reference: UCPLAN-14 (not a live YouTrack ID).
+Expected outcome and acceptance criteria: Validation, filters, upload limits and media permissions pass.
+Traceability: FR-02, FR-03, FR-04.
+Proposed owner: Akhmetov Kazbek.
+Deadline is a proposed planning date; align with the confirmed academic calendar.
+Evidence: attach artifact/PR/test links.
+Definition of done: acceptance met, checked, peer-reviewed and linked to the repository.",Task,High,Open,Akhmetov Kazbek,2026-11-13
+[UCPLAN-15] Implement offers and atomic assignment,"Planning reference: UCPLAN-15 (not a live YouTrack ID).
+Expected outcome and acceptance criteria: Offers and concurrent/idempotent acceptance tests pass.
+Traceability: FR-05, FR-07, NFR-02.
+Proposed owner: Uranov Daryn.
+Deadline is a proposed planning date; align with the confirmed academic calendar.
+Evidence: attach artifact/PR/test links.
+Definition of done: acceptance met, checked, peer-reviewed and linked to the repository.",Task,Critical,Open,Uranov Daryn,2026-11-20
+[UCPLAN-16] Implement profiles comparison and reviews,"Planning reference: UCPLAN-16 (not a live YouTrack ID).
+Expected outcome and acceptance criteria: Portfolio, sorting, no-review state and review eligibility pass.
+Traceability: FR-06, FR-13, FR-14.
+Proposed owner: Akhmetov Kazbek.
+Deadline is a proposed planning date; align with the confirmed academic calendar.
+Evidence: attach artifact/PR/test links.
+Definition of done: acceptance met, checked, peer-reviewed and linked to the repository.",Task,High,Open,Akhmetov Kazbek,2026-11-27
+[UCPLAN-17] Implement lifecycle and agreement changes,"Planning reference: UCPLAN-17 (not a live YouTrack ID).
+Expected outcome and acceptance criteria: Actor/state, cancellation and mutual agreement tests pass.
+Traceability: FR-08, FR-09, FR-17.
+Proposed owner: Uranov Daryn.
+Deadline is a proposed planning date; align with the confirmed academic calendar.
+Evidence: attach artifact/PR/test links.
+Definition of done: acceptance met, checked, peer-reviewed and linked to the repository.",Task,High,Open,Uranov Daryn,2026-12-04
+[UCPLAN-18] Implement persisted chat and inbox,"Planning reference: UCPLAN-18 (not a live YouTrack ID).
+Expected outcome and acceptance criteria: Private history, reconnect, duplicate handling and consent checks pass.
+Traceability: FR-10, FR-11.
+Proposed owner: Akhmetov Kazbek.
+Deadline is a proposed planning date; align with the confirmed academic calendar.
+Evidence: attach artifact/PR/test links.
+Definition of done: acceptance met, checked, peer-reviewed and linked to the repository.",Task,High,Open,Akhmetov Kazbek,2026-12-11
+[UCPLAN-19] Implement moderation and audit trail,"Planning reference: UCPLAN-19 (not a live YouTrack ID).
+Expected outcome and acceptance criteria: Staff-only decisions, appeals and history pass review.
+Traceability: FR-15, NFR-12.
+Proposed owner: Tazhibayev Marsel.
+Deadline is a proposed planning date; align with the confirmed academic calendar.
+Evidence: attach artifact/PR/test links.
+Definition of done: acceptance met, checked, peer-reviewed and linked to the repository.",Task,High,Open,Tazhibayev Marsel,2026-12-11
+[UCPLAN-20] Collect and label classification dataset,"Planning reference: UCPLAN-20 (not a live YouTrack ID).
+Expected outcome and acceptance criteria: Provenance, annotation guide, language counts and frozen grouped split exist.
+Traceability: NFR-10.
+Proposed owner: Uranov Daryn.
+Deadline is a proposed planning date; align with the confirmed academic calendar.
+Evidence: attach artifact/PR/test links.
+Definition of done: acceptance met, checked, peer-reviewed and linked to the repository.",Task,Critical,Open,Uranov Daryn,2026-11-27
+[UCPLAN-21] Train and compare category models,"Planning reference: UCPLAN-21 (not a live YouTrack ID).
+Expected outcome and acceptance criteria: Keyword, TF-IDF and encoder metrics reported on same held-out data.
+Traceability: FR-12, NFR-09.
+Proposed owner: Uranov Daryn.
+Deadline is a proposed planning date; align with the confirmed academic calendar.
+Evidence: attach artifact/PR/test links.
+Definition of done: acceptance met, checked, peer-reviewed and linked to the repository.",Task,High,Open,Uranov Daryn,2026-12-18
+[UCPLAN-22] Implement web client core journeys,"Planning reference: UCPLAN-22 (not a live YouTrack ID).
+Expected outcome and acceptance criteria: Create, compare, select, complete and review work against API.
+Traceability: NFR-04.
+Proposed owner: Akhmetov Kazbek.
+Deadline is a proposed planning date; align with the confirmed academic calendar.
+Evidence: attach artifact/PR/test links.
+Definition of done: acceptance met, checked, peer-reviewed and linked to the repository.",Task,High,Open,Akhmetov Kazbek,2026-12-18
+[UCPLAN-23] Implement Flutter customer and provider journeys,"Planning reference: UCPLAN-23 (not a live YouTrack ID).
+Expected outcome and acceptance criteria: Same journey verified on Android and iOS with recorded versions.
+Traceability: NFR-08.
+Proposed owner: Akhmetov Kazbek.
+Deadline is a proposed planning date; align with the confirmed academic calendar.
+Evidence: attach artifact/PR/test links.
+Definition of done: acceptance met, checked, peer-reviewed and linked to the repository.",Task,High,Open,Akhmetov Kazbek,2027-01-08
+[UCPLAN-24] Deploy pilot and test recovery,"Planning reference: UCPLAN-24 (not a live YouTrack ID).
+Expected outcome and acceptance criteria: TLS, session, secret and restore checks have evidence.
+Traceability: NFR-05, NFR-06, NFR-07.
+Proposed owner: Tazhibayev Marsel.
+Deadline is a proposed planning date; align with the confirmed academic calendar.
+Evidence: attach artifact/PR/test links.
+Definition of done: acceptance met, checked, peer-reviewed and linked to the repository.",Task,High,Open,Tazhibayev Marsel,2027-01-08
+[UCPLAN-25] Run user and load evaluation,"Planning reference: UCPLAN-25 (not a live YouTrack ID).
+Expected outcome and acceptance criteria: Baseline comparison, API load report and limitations documented.
+Traceability: NFR-03, NFR-04.
+Proposed owner: Tazhibayev Marsel.
+Deadline is a proposed planning date; align with the confirmed academic calendar.
+Evidence: attach artifact/PR/test links.
+Definition of done: acceptance met, checked, peer-reviewed and linked to the repository.",Task,High,Open,Tazhibayev Marsel,2027-01-15
+[UCPLAN-26] Prepare final integration review,"Planning reference: UCPLAN-26 (not a live YouTrack ID).
+Expected outcome and acceptance criteria: Mandatory requirements verified or explicitly rescoped; final date aligned with supervisor.
+Traceability: O5, O6.
+Proposed owner: Tazhibayev Marsel.
+Deadline is a proposed planning date; align with the confirmed academic calendar.
+Evidence: attach artifact/PR/test links.
+Definition of done: acceptance met, checked, peer-reviewed and linked to the repository.",Task,High,Open,Tazhibayev Marsel,2027-01-22
+[UCPLAN-27] Review data and reproduce ML experiment,"Planning reference: UCPLAN-27 (not a live YouTrack ID).
+Expected outcome and acceptance criteria: Independent reproduction within 0.01 macro-F1 and leakage checklist completed.
+Traceability: NFR-10.
+Proposed owner: Akhmetov Kazbek.
+Deadline is a proposed planning date; align with the confirmed academic calendar.
+Evidence: attach artifact/PR/test links.
+Definition of done: acceptance met, checked, peer-reviewed and linked to the repository.",Task,High,Open,Akhmetov Kazbek,2026-12-21
+[UCPLAN-28] Implement declared direct-payment method,"Planning reference: UCPLAN-28 (not a live YouTrack ID).
+Expected outcome and acceptance criteria: No card collection and no verified-paid claim; declaration test passes.
+Traceability: FR-18.
+Proposed owner: Uranov Daryn.
+Deadline is a proposed planning date; align with the confirmed academic calendar.
+Evidence: attach artifact/PR/test links.
+Definition of done: acceptance met, checked, peer-reviewed and linked to the repository.",Task,Normal,Open,Uranov Daryn,2026-12-11

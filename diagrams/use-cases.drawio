@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="use-cases" name="UyCare use cases">
+    <mxGraphModel dx="1200" dy="1050" grid="1" gridSize="10" page="1" pageWidth="1200" pageHeight="1050">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="boundary" value="UyCare system" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f2f6ed;strokeColor=#a3b5aa;fontFamily=Arial;fontSize=17;verticalAlign=top;align=left;spacing=14;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="255" y="90" width="700" height="860" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=none;" edge="1" parent="1" source="customer" target="u1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=none;" edge="1" parent="1" source="customer" target="u3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="335" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=none;" edge="1" parent="1" source="customer" target="u5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="215" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=none;" edge="1" parent="1" source="customer" target="u6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="635" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=none;" edge="1" parent="1" source="customer" target="u8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="785" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=none;" edge="1" parent="1" source="provider" target="u2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="970" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=none;" edge="1" parent="1" source="provider" target="u4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="970" y="335" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=none;" edge="1" parent="1" source="provider" target="u5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="985" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=none;" edge="1" parent="1" source="provider" target="u7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1000" y="635" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=none;" edge="1" parent="1" source="provider" target="u8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1020" y="785" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=none;" edge="1" parent="1" source="moderator" target="u9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="895" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="customer" value="Customer&lt;br&gt;Private or OSI/KSK" style="shape=umlActor;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="20" y="175" width="180" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="provider" value="Provider" style="shape=umlActor;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="995" y="175" width="180" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="moderator" value="Moderator" style="shape=umlActor;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="20" y="755" width="180" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="u1" value="Publish a repair request" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="300" y="155" width="270" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="u2" value="Maintain profile / portfolio" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="640" y="155" width="270" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="u3" value="Compare and select an offer" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="300" y="300" width="270" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="u4" value="Browse and submit an offer" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="640" y="300" width="270" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="u5" value="Discuss work in private chat" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="470" y="455" width="280" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="u6" value="Confirm work and review" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="300" y="600" width="270" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="u7" value="Update assigned job progress" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="640" y="600" width="270" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="u8" value="Report a problem" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="470" y="750" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="u9" value="Resolve reports / membership" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="300" y="865" width="270" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

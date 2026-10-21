@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="job-lifecycle" name="UyCare job lifecycle">
+    <mxGraphModel dx="1150" dy="670" grid="1" gridSize="10" page="1" pageWidth="1150" pageHeight="670">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="e0" value="Customer selects" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=block;" edge="1" parent="1" source="open" target="assigned">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e1" value="Provider starts" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=block;" edge="1" parent="1" source="assigned" target="progress">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" value="Provider submits" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=block;" edge="1" parent="1" source="progress" target="await">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" value="Customer confirms" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=block;" edge="1" parent="1" source="await" target="done">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" value="Customer requests corrections" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=block;" edge="1" parent="1" source="await" target="progress">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="960" y="110" />
+              <mxPoint x="655" y="110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" value="Owner cancels" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=block;" edge="1" parent="1" source="open" target="cancel">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="125" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" value="Agreed cancellation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=block;" edge="1" parent="1" source="assigned" target="cancel">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=block;dashed=1;" edge="1" parent="1" source="progress" target="cancel">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="655" y="448" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="open" value="Open request" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="35" y="180" width="180" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="assigned" value="Assigned" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="300" y="180" width="180" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="progress" value="In progress" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="565" y="180" width="180" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="await" value="Awaiting confirmation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="830" y="180" width="260" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="done" value="Completed" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eaf1dd;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="830" y="410" width="260" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="cancel" value="Cancelled" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="300" y="410" width="300" height="75" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
