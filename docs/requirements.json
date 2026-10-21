@@ -1,0 +1,234 @@
+{
+  "functional": [
+    {
+      "id": "FR-01",
+      "priority": "Must",
+      "title": "Accounts and roles",
+      "component": "Accounts",
+      "statement": "Customer and provider roles are stored independently; staff permissions are separate.",
+      "acceptance": "Given an unauthenticated user, protected writes return 401. Given a provider without staff permission, moderation returns 403. Switching a UI role never grants a server permission."
+    },
+    {
+      "id": "FR-02",
+      "priority": "Must",
+      "title": "Create and edit a request",
+      "component": "Requests",
+      "statement": "An owner supplies title, description, category, property type, city/district, desired date and optional KZT budget.",
+      "acceptance": "A valid request publishes once with an ID. Missing title/description/category or a past desired date is rejected. Once offers exist, a material edit invalidates active offers and requests resubmission."
+    },
+    {
+      "id": "FR-03",
+      "priority": "Must",
+      "title": "Request photos",
+      "component": "Media",
+      "statement": "An owner can attach up to five JPEG/PNG images, each no larger than 5 MB.",
+      "acceptance": "Unsupported content and oversized files are rejected server-side. Another customer cannot retrieve a private attachment by guessing its URL."
+    },
+    {
+      "id": "FR-04",
+      "priority": "Must",
+      "title": "Browse eligible requests",
+      "component": "Requests",
+      "statement": "Providers filter open requests by city and category; exact address and contact are withheld.",
+      "acceptance": "A city/category query excludes nonmatching and assigned/cancelled requests. A provider cannot see their own request as a bidding opportunity."
+    },
+    {
+      "id": "FR-05",
+      "priority": "Must",
+      "title": "Submit and revise an offer",
+      "component": "Offers",
+      "statement": "A provider proposes a positive KZT price, availability, scope and materials/travel inclusions.",
+      "acceptance": "One active offer per provider/request is maintained. Negative price, own-request bidding and bidding on a closed request are rejected. Revised offers retain an audit event."
+    },
+    {
+      "id": "FR-06",
+      "priority": "Must",
+      "title": "Compare providers",
+      "component": "Profiles",
+      "statement": "A customer compares price, schedule, portfolio and review count; sorting is explicit.",
+      "acceptance": "All active offers on the owned request are shown. Price sort is numeric. A provider without reviews displays No reviews yet instead of a fabricated rating."
+    },
+    {
+      "id": "FR-07",
+      "priority": "Must",
+      "title": "Accept exactly one offer",
+      "component": "Orders",
+      "statement": "Only the request owner or authorised organisation member can select an active offer.",
+      "acceptance": "Two simultaneous acceptance attempts produce exactly one assignment. A losing attempt returns 409. Repeating a successful request with the same idempotency key returns the same result."
+    },
+    {
+      "id": "FR-08",
+      "priority": "Must",
+      "title": "Coordinate progress",
+      "component": "Orders",
+      "statement": "The assigned provider starts work and marks it ready for confirmation; the customer confirms completion.",
+      "acceptance": "Only Assigned to In progress to Awaiting confirmation to Completed is accepted. An unrelated user or invalid transition is rejected and no history changes."
+    },
+    {
+      "id": "FR-09",
+      "priority": "Must",
+      "title": "Handle cancellation",
+      "component": "Orders",
+      "statement": "Before assignment the owner can cancel; after assignment either party requests cancellation and the other confirms.",
+      "acceptance": "Cancellation records actor, reason and time. A disputed cancellation stays pending for moderator review. Cancelled work cannot receive a completed-job review."
+    },
+    {
+      "id": "FR-10",
+      "priority": "Must",
+      "title": "Private messaging",
+      "component": "Messaging",
+      "statement": "A chat belongs to a request/offer pair and is accessible to the customer and that provider.",
+      "acceptance": "A third party cannot read or send messages. After reconnect, the same ordered persisted history appears. Duplicate client message IDs do not create duplicates."
+    },
+    {
+      "id": "FR-11",
+      "priority": "Should",
+      "title": "Contact sharing and notifications",
+      "component": "Messaging",
+      "statement": "A user may explicitly share a phone contact; essential events appear in an in-app inbox.",
+      "acceptance": "Phone contact is absent before opt-in and visible only to the intended participant after sharing. The inbox records offer, acceptance and completion events without exposing private content to others."
+    },
+    {
+      "id": "FR-12",
+      "priority": "Must",
+      "title": "Suggest a category",
+      "component": "Classification",
+      "statement": "The service suggests a category from text and allows confirmation, correction or manual selection.",
+      "acceptance": "Blank/unsupported text has no forced category. Service failure leaves request creation usable. The final category, suggested category and model version are stored separately."
+    },
+    {
+      "id": "FR-13",
+      "priority": "Must",
+      "title": "Completed-job reviews",
+      "component": "Reviews",
+      "statement": "Only the commissioning customer can leave one 1–5 rating and comment for the completed job.",
+      "acceptance": "Uncompleted, cancelled, unrelated and duplicate reviews are rejected. The displayed mean and count match eligible published reviews. Moderation removals recalculate them."
+    },
+    {
+      "id": "FR-14",
+      "priority": "Must",
+      "title": "Manage a provider profile",
+      "component": "Profiles",
+      "statement": "Providers describe skills, service areas and self-uploaded portfolio work.",
+      "acceptance": "Providers edit only their own profile. Self-declared experience is labelled as such. Uploading a photo never grants a verified-identity badge."
+    },
+    {
+      "id": "FR-15",
+      "priority": "Must",
+      "title": "Reports and moderation",
+      "component": "Moderation",
+      "statement": "Users report requests, profiles, messages or reviews; staff record decisions and reasons.",
+      "acceptance": "Only staff can resolve a report or suspend an account. Resolution retains an audit record and allows an appeal record without deleting original evidence."
+    },
+    {
+      "id": "FR-16",
+      "priority": "Must",
+      "title": "Organisation-owned requests",
+      "component": "Organisations",
+      "statement": "An approved member may act for an organisation; ownership survives a member leaving.",
+      "acceptance": "A member from organisation B cannot edit organisation A requests. Revoked membership immediately blocks new actions. Staff approval records the membership basis without claiming legal certification."
+    },
+    {
+      "id": "FR-17",
+      "priority": "Must",
+      "title": "Agreement history",
+      "component": "Orders",
+      "statement": "The accepted offer snapshot and subsequent agreed changes remain available to both parties.",
+      "acceptance": "Changing a profile or other offer cannot change the accepted price/scope snapshot. A proposed job change takes effect only after the other party accepts it."
+    },
+    {
+      "id": "FR-18",
+      "priority": "Should",
+      "title": "Direct payment declaration",
+      "component": "Orders",
+      "statement": "Parties may record that payment will occur directly outside the platform.",
+      "acceptance": "No card number or payment credential is requested. A user declaration is labelled unverified and cannot trigger a platform-paid or escrow status."
+    }
+  ],
+  "nonfunctional": [
+    {
+      "id": "NFR-01",
+      "priority": "Must",
+      "title": "Authorization",
+      "statement": "All record and media operations enforce ownership/membership on the server.",
+      "acceptance": "Pass the complete cross-role and cross-organisation access matrix, including direct IDs and WebSocket sessions."
+    },
+    {
+      "id": "NFR-02",
+      "priority": "Must",
+      "title": "Data integrity",
+      "statement": "Acceptance, status changes and review creation preserve database invariants.",
+      "acceptance": "Run concurrent acceptance and repeated-command tests against PostgreSQL; exactly one assignment and at most one customer review per job remain."
+    },
+    {
+      "id": "NFR-03",
+      "priority": "Must",
+      "title": "Response time",
+      "statement": "Under the defined pilot load, ordinary reads remain responsive.",
+      "acceptance": "On a documented 2 vCPU/4 GB test server with 10,000 requests and 25 concurrent clients, warm API p95 is at most 800 ms and error rate below 1% over 10 minutes, excluding uploads and ML."
+    },
+    {
+      "id": "NFR-04",
+      "priority": "Must",
+      "title": "Usability",
+      "statement": "Core web journeys work at mobile and desktop widths with keyboard navigation.",
+      "acceptance": "At 390 and 1440 px, no horizontal overflow; all key controls have visible focus and labels. At least 80% of 5–8 recruited users finish the core task without intervention."
+    },
+    {
+      "id": "NFR-05",
+      "priority": "Must",
+      "title": "Privacy and secret handling",
+      "statement": "Private contacts, exact addresses and credentials are not public data.",
+      "acceptance": "No secrets or real personal research data are committed. Logs redact tokens and private message text. Public request responses omit exact addresses and phone numbers."
+    },
+    {
+      "id": "NFR-06",
+      "priority": "Must",
+      "title": "Recoverability",
+      "statement": "Backups can restore a consistent pilot dataset.",
+      "acceptance": "Restore an encrypted backup to a clean environment and verify representative records and attachment references. Proposed pilot RPO 24 h and RTO 4 h are demonstrated, not assumed."
+    },
+    {
+      "id": "NFR-07",
+      "priority": "Must",
+      "title": "Transport and sessions",
+      "statement": "Deployed authenticated traffic uses TLS and bounded sessions.",
+      "acceptance": "HTTP redirects to HTTPS, expired/revoked sessions fail, repeated login attempts are limited, and state-changing cookie requests require CSRF protection."
+    },
+    {
+      "id": "NFR-08",
+      "priority": "Must",
+      "title": "Compatibility",
+      "statement": "The core workflow operates across the planned clients.",
+      "acceptance": "Run the same acceptance scenario in a named desktop browser, Android emulator/device and iOS simulator/device; record OS/app versions. Mobile success remains untested until Flutter exists."
+    },
+    {
+      "id": "NFR-09",
+      "priority": "Must",
+      "title": "ML quality and latency",
+      "statement": "Category suggestions are optional and must pass a defined release gate.",
+      "acceptance": "On a frozen domain test set, macro-F1 is at least 0.80, at least 0.05 above keyword rules, and each evaluated language macro-F1 is at least 0.70. CPU warm p95 prediction time is at most 1 s. Otherwise keep manual selection and report failure."
+    },
+    {
+      "id": "NFR-10",
+      "priority": "Must",
+      "title": "ML reproducibility",
+      "statement": "Dataset provenance, grouped split, preprocessing and model version are reproducible.",
+      "acceptance": "A second team member reproduces metrics within 0.01 macro-F1 using the same data hash, split IDs, seed and locked environment. Test data never tune thresholds or vocabulary."
+    },
+    {
+      "id": "NFR-11",
+      "priority": "Must",
+      "title": "Maintainability and traceability",
+      "statement": "Mandatory requirements map to components, tasks and tests.",
+      "acceptance": "Every Must requirement has an acceptance record; reviewed changes pass appropriate checks and link to a real YouTrack ID after project setup."
+    },
+    {
+      "id": "NFR-12",
+      "priority": "Should",
+      "title": "Observability",
+      "statement": "Failures and critical lifecycle actions are diagnosable without private content.",
+      "acceptance": "A failed acceptance and failed notification can be traced by correlation ID; audit records contain actor, action, target and time, not secrets."
+    }
+  ]
+}
