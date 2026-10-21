@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="system-context" name="UyCare system context">
+    <mxGraphModel dx="1120" dy="780" grid="1" gridSize="10" page="1" pageWidth="1120" pageHeight="780">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="e0" value="Publishes and selects" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=block;" edge="1" parent="1" source="c" target="s">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="175" />
+              <mxPoint x="300" y="255" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e1" value="Organisation requests" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=block;" edge="1" parent="1" source="o" target="s">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="390" />
+              <mxPoint x="300" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" value="Offers and progress" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=block;" edge="1" parent="1" source="p" target="s">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="805" y="175" />
+              <mxPoint x="805" y="255" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" value="Moderation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=block;" edge="1" parent="1" source="m" target="s">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="805" y="390" />
+              <mxPoint x="805" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" value="Authorized uploads / access" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#507268;fontFamily=Arial;fontSize=14;endArrow=block;" edge="1" parent="1" source="s" target="media">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c" value="Private customer&lt;br&gt;Resident or homeowner" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="30" y="125" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="o" value="OSI/KSK representative&lt;br&gt;Acts for an organisation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="30" y="340" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="p" value="Independent provider&lt;br&gt;Profile and offers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="880" y="125" width="210" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="m" value="Moderator&lt;br&gt;Reports and decisions" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="880" y="340" width="210" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="s" value="UyCare platform&lt;br&gt;Requests and competing offers&lt;br&gt;Customer selection and job history&lt;br&gt;Chat and completed-job reviews&lt;br&gt;Optional category suggestion" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eaf1dd;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="375" y="200" width="360" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="media" value="External object storage&lt;br&gt;Protected media and portfolios" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="400" y="570" width="310" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="outside" value="Outside UyCare&lt;br&gt;Direct payment and phone calls" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#527563;fontFamily=Arial;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="20" y="620" width="300" height="65" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
