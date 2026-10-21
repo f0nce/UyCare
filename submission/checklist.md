@@ -19,7 +19,7 @@ Submission date: 24 October, assumed 2026. Actual submission commit and tag: not
 - Conduct 3–5 real user discussions or obtain a substantive client agreement.
 - Obtain substantive supervisor feedback and record resulting revisions.
 - Create YouTrack, map actual accounts, import tasks and add its live link.
-- Publish and review the artifacts in the supplied repository using write access.
+- Review the published preparation branch with another team member and address their comments.
 - Demonstrate genuine progressive contributions from each student. A generated starting package does not meet this historical requirement.
 - Confirm the academic calendar and language scope for ML.
 

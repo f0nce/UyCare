@@ -11,3 +11,7 @@ Passed: local prototype HTTP response 200 and private hosted deployment. Hosting
 Not completed: browser interaction and viewport visual inspection. The in-app browser session failed to open a controllable tab, Chrome browser control was unavailable, and native Yandex control was not approved. Follow prototype-checklist.md manually before presenting. No claim of a full UI test is made.
 
 Not run: production API, access control, PostgreSQL concurrency, mobile platform, performance, recovery, trained-model and participant evaluation tests. These need the future implementation or real participants.
+
+## Document and presentation checks
+
+The final Word report renders to 38 pages. All pages were visually inspected, with revised pages checked again after layout changes. The presentation contains 21 editable slides with speaker notes and source references. Package, native-table and geometry validation passed without warnings; all slides were visually inspected. These are artifact checks, not supervisor approval.

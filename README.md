@@ -46,6 +46,12 @@ Run `python3 tools/check_package.py` to check artifact presence, source counts a
 
 Preparation checks: the seven prototype domain tests and package consistency checks passed. The local server returned HTTP 200 and the private site deployment succeeded. Full browser interaction and mobile viewport inspection could not be completed in the preparation environment and remain manual checks. See [verification record](tests/preparation-verification.md).
 
+## Ready-to-use deliverables
+
+- [English Word report](deliverables/UyCare_PreDefense_Report.docx)
+- [English presentation](deliverables/UyCare_PreDefense_Presentation.pptx)
+- [Preparation Pull Request](https://github.com/f0nce/UyCare/pull/1) — substantive team review pending.
+
 ## Documentation
 
 - [Proposal and scope](docs/01-project-proposal.md)

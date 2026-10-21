@@ -24,7 +24,7 @@ Proposed targets are at least 80% independent completion and at least 20% lower 
 
 ## ML data and experimental design
 
-Start with the six-category taxonomy in the proposal. Aim to collect at least 600 labelled domain examples across Russian and Kazakh, with at least 30 held-out examples per category overall and transparent language counts. The number is a collection target; no dataset currently exists. If representative data cannot be obtained, narrow the experimental claim and retain manual classification in the product.
+Start with the six-category taxonomy in the proposal. Aim to collect at least 900 labelled domain examples across Russian and Kazakh, with at least 30 held-out examples per category overall and transparent language counts. At a 20% test split, 900 balanced examples permit 180 test examples, or 30 per category; collect more if grouping or imbalance reduces coverage. The number is a collection target; no dataset currently exists. If representative data cannot be obtained, narrow the experimental claim and retain manual classification in the product.
 
 Collect consented descriptions or use lawfully reusable data with documented provenance. Remove names, telephone numbers and exact addresses. Two annotators independently label at least 20% of examples and resolve disagreements with a written guide. Track mixed and out-of-scope cases. Synthetic paraphrases may supplement training but must be flagged and grouped with their source; the main test set must contain independently sourced human descriptions.
 
